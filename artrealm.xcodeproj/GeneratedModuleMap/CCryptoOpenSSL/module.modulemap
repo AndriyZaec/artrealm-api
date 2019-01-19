@@ -1,0 +1,4 @@
+module CCryptoOpenSSL {
+    umbrella "/Users/Andrew/Web/artrealm/.build/checkouts/crypto.git-4083692516924779913/Sources/CCryptoOpenSSL/include"
+    export *
+}
