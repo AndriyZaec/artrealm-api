@@ -19,7 +19,6 @@ class UserController: RouteCollection {
 }
 
 private extension UserController {
-    
     func registerUserHandler(_ request: Request, newUser: User) throws -> Future<HTTPResponseStatus> {
         return User.query(on: request).filter(\.email == newUser.email)
             .first()

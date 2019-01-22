@@ -18,6 +18,12 @@ struct User: Content, SQLiteUUIDModel, Migration {
     private(set) var password: String
 }
 
+extension User {
+    var artworks: Children<User, Artwork> {
+        return children(\.userID)
+    }
+}
+
 extension User: BasicAuthenticatable {
     static let usernameKey: WritableKeyPath<User, String> = \.email
     static let passwordKey: WritableKeyPath<User, String> = \.password

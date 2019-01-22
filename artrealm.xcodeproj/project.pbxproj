@@ -22,6 +22,8 @@
 
 /* Begin PBXBuildFile section */
 		493C22AE21F38E8F00AB3CC3 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C22AD21F38E8F00AB3CC3 /* UserController.swift */; };
+		493C24FE21F7D96B00AB3CC3 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C24FD21F7D96B00AB3CC3 /* Artwork.swift */; };
+		493C250021F7DBEB00AB3CC3 /* ArtworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C24FF21F7DBEB00AB3CC3 /* ArtworkController.swift */; };
 		OBJ_1000 /* CNIOAtomics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIOAtomics::Product" /* CNIOAtomics.framework */; };
 		OBJ_1001 /* CNIODarwin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIODarwin::Product" /* CNIODarwin.framework */; };
 		OBJ_1002 /* CNIOLinux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIOLinux::Product" /* CNIOLinux.framework */; };
@@ -5444,6 +5446,9 @@
 
 /* Begin PBXFileReference section */
 		493C22AD21F38E8F00AB3CC3 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		493C24FD21F7D96B00AB3CC3 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		493C24FF21F7DBEB00AB3CC3 /* ArtworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkController.swift; sourceTree = "<group>"; };
+		493C250321F7DD6E00AB3CC3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		"Auth::Authentication::Product" /* Authentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Command::Product" /* Command.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Console::Product" /* Console.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -7118,6 +7123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		493C250221F7DD6E00AB3CC3 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				493C250321F7DD6E00AB3CC3 /* .gitkeep */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -7185,6 +7198,7 @@
 			children = (
 				OBJ_12 /* TodoController.swift */,
 				493C22AD21F38E8F00AB3CC3 /* UserController.swift */,
+				493C24FF21F7DBEB00AB3CC3 /* ArtworkController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -7231,6 +7245,7 @@
 			children = (
 				OBJ_14 /* Todo.swift */,
 				OBJ_15 /* User.swift */,
+				493C24FD21F7D96B00AB3CC3 /* Artwork.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -8223,7 +8238,7 @@
 			path = Connection;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -8233,7 +8248,6 @@
 				OBJ_24 /* Dependencies */,
 				OBJ_898 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_505 /* ConnectionPool */ = {
@@ -8857,6 +8871,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				493C250221F7DD6E00AB3CC3 /* Public */,
 				OBJ_8 /* Run */,
 				OBJ_10 /* App */,
 			);
@@ -11172,7 +11187,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_898 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -12411,6 +12426,8 @@
 				OBJ_954 /* app.swift in Sources */,
 				OBJ_955 /* boot.swift in Sources */,
 				OBJ_956 /* configure.swift in Sources */,
+				493C24FE21F7D96B00AB3CC3 /* Artwork.swift in Sources */,
+				493C250021F7DBEB00AB3CC3 /* ArtworkController.swift in Sources */,
 				OBJ_957 /* routes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
