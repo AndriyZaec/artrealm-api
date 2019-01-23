@@ -15,10 +15,15 @@ class UserController: RouteCollection {
     func boot(router: Router) throws {
         let group = router.grouped("api", "users")
         group.post(User.self, at: "signup", use: registerUserHandler)
+        group.get("/", use: index)
     }
 }
 
 private extension UserController {
+    func index(_ request: Request) throws -> Future<[User]> {
+        return User.query(on: request).all()
+    }
+    
     func registerUserHandler(_ request: Request, newUser: User) throws -> Future<HTTPResponseStatus> {
         return User.query(on: request).filter(\.email == newUser.email)
             .first()
